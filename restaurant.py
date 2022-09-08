@@ -19,16 +19,16 @@ class Table:
 
     def remove(self, item: str, price: float, quantity: int = 1):
         product = [
-            (i, itm) for i, itm in enumerate(self.bill)
-            if itm["item"] == item and itm["quantity"] >= quantity and itm["price"] == price
+            (i, itm["quantity"]) for i, itm in enumerate(self.bill)
+            if itm["item"] == item and itm["price"] == price
         ]
         if product:
-            i, itm = product[0]
-            if itm["quantity"] > quantity:
+            i, qty = product[0]
+            if qty > quantity:
                 self.bill[i]["quantity"] -= quantity
-            else:
+            elif qty == quantity:
                 self.bill.pop(i)
-            return True
+            return bool(product) and (qty >= quantity)
         else:
             return False
 

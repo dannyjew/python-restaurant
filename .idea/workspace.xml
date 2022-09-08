@@ -26,16 +26,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Git.Branch.Popup.ShowAllRemotes": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programming/Python/Projects/Sparta2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Python/Projects/Sparta2&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_module.py">
+}</component>
+  <component name="RunManager" selected="Python tests.Python tests for test_module.UnitTests">
     <configuration name="test_module" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-restaurant" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -120,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_module.py" />
         <item itemvalue="Python tests.Python tests for test_module.UnitTests" />
+        <item itemvalue="Python tests.Python tests in test_module.py" />
         <item itemvalue="Python tests.Python tests for test_module.UnitTests.test_remove_no_item" />
         <item itemvalue="Python tests.Python tests for test_module.UnitTests.test_get_total" />
         <item itemvalue="Python.test_module" />
@@ -136,14 +136,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656359767385</updated>
-      <workItem from="1662634453196" duration="1872000" />
+      <workItem from="1662634453196" duration="2368000" />
+      <workItem from="1662636859101" duration="3255000" />
     </task>
+    <task id="LOCAL-00001" summary="Uploaded whole Table class content and confirmed functionality with tests">
+      <created>1662636436931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662636436932</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Uploaded whole Table class content and confirmed functionality with tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uploaded whole Table class content and confirmed functionality with tests" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_restaurant$.coverage" NAME=" Coverage Results" MODIFIED="1662636268347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_restaurant$.coverage" NAME=" Coverage Results" MODIFIED="1662642873787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
