@@ -1,35 +1,28 @@
-import math
-
-class table:
+class Table:
     def __init__(self, Number_of_people):
         self.number_of_people = Number_of_people
         self.bill = []
 
 
-    def order(self, order_dict : dict):
-        if "quantity" not in order_dict:
-            order_dict["quantity"] = 1
-        elif order_dict["quantity"] <= 0:
-            order_dict["quantity"] = 1
+    def order(self, item, price, quantity = 1 ):
 
-        for item in self.bill:
-            if item["item"] == order_dict["item"] and item["price"] == order_dict["price"]:
-                new_quantity = item["quantity"] + order_dict["quantity"]
-                item["quantity"] = new_quantity
+        for item1 in self.bill:
+            if item1["item"] == item and item1["price"] == price:
+                 item1["quantity"] += quantity
+                 return None
 
-        self.bill.append(order_dict)
+        self.bill.append({"item": item, "price": price, "quantity": quantity})
 
 
 
-    def remove(self, order_dict : dict):
-        for item in self.bill:
-            if item["item"] == order_dict["item"] and item["price"] == order_dict["price"]:
-                if item["quantity"] - order_dict["quantity"] <= 0:
+    def remove(self, item, price, quantity = 1):
+        for item2 in self.bill:
+            if item2["item"] == item and item2["price"] == price:
+                if item2["quantity"] - quantity <= 0:
                     return False
                 else:
-                    new_quantity = item["quantity"] - order_dict["quantity"]
-                    item["quantity"] = new_quantity
-                    return self.bill
+                    item2["quantity"] -= quantity
+                    return True
             return False
 
 
