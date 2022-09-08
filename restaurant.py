@@ -7,11 +7,9 @@ class Table:
         for order in self.bill:
             if item in order.values(): #if item is in bill adds up the quantity
                 order['quantity']+=quantity
-                print('Quantity of the order updated!', self.bill)
                 return None
             continue
         self.bill.append({'item':item, 'price':price,'quantity':quantity})
-        print('New item order appended!')
 
     def remove(self,item:str,price:float,quantity:int=1):
         for order in self.bill:
