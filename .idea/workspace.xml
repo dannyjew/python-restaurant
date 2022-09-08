@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28bf0f6f-6e3d-4b94-ba97-2a585d54d7e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/restaurant.py" beforeDir="false" afterPath="$PROJECT_DIR$/restaurant.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656359767385</updated>
       <workItem from="1662634453196" duration="2368000" />
-      <workItem from="1662636859101" duration="3255000" />
+      <workItem from="1662636859101" duration="4180000" />
     </task>
     <task id="LOCAL-00001" summary="Uploaded whole Table class content and confirmed functionality with tests">
       <created>1662636436931</created>
@@ -157,6 +156,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Uploaded whole Table class content and confirmed functionality with tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_restaurant$.coverage" NAME=" Coverage Results" MODIFIED="1662642873787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_restaurant$.coverage" NAME=" Coverage Results" MODIFIED="1662643625203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

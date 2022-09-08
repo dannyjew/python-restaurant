@@ -4,10 +4,15 @@ class Table:
         self.no_of_people = no_of_people
 
     def order(self, item: str, price: float, quantity: int = 1):
+        # Check if there is an item in the self.bill list that has a matching item name and price to the given one.
+        # The list should either be empty (if no matches present) or have one item in it
         index = [
             i for i, itm in enumerate(self.bill)
             if itm["item"] == item
         ]
+
+        # Add given quantity to the existing one if the list isn't empty - i.e. of a matching item-price pair was found.
+        # If no matching items, append a dictionary to the list with order details.
         if index:
             self.bill[index[0]]["quantity"] += quantity
         else:
@@ -18,12 +23,25 @@ class Table:
             })
 
     def remove(self, item: str, price: float, quantity: int = 1):
+        # Check if there is an item in the self.bill list that has a matching item name and price to the given one.
+        # The list should either be empty (if no matches present) or have the index of the item and its quantity
+        # enclosed in a tuple.
         product = [
             (i, itm["quantity"]) for i, itm in enumerate(self.bill)
             if itm["item"] == item and itm["price"] == price
         ]
+
+        # i.e. "if the list product is not empty"
         if product:
+            # Unpack the item index and its quantity from the list-tuple wrapping
             i, qty = product[0]
+            # Consider three cases where quantity of the item already in the list is:
+            # 1. Greater than the quantity that user wants to subtract:
+            #    --->   get the difference of quantities
+            # 2. Equal the quantity that user wants to subtract:
+            #    --->   remove the item from the list
+            # 3. Smaller than the quantity that user wants to subtract:
+            #    --->   return False as the operation cannot be completed
             if qty > quantity:
                 self.bill[i]["quantity"] -= quantity
             elif qty == quantity:
