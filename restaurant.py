@@ -48,12 +48,4 @@ class table:
         return round(float(test['Sub Total'].lstrip("£")) / self.number_of_people, 2)
 
 
-t = table(6)
-t.order({"item" : "food1", "price" : 20, "quantity" : 3})
-t.order({"item" : "food2", "price" : 10, "quantity" : 1})
-t.order({"item" : "food3", "price" : 3.2, "quantity" : 1})
-
-
-print(t.get_total(0.15))
-print(t.split_bill())
 
